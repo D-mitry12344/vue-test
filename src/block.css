@@ -1,0 +1,147 @@
+.arrow {
+  background: url(assets/arrow.svg) no-repeat center/cover;
+  width: 30px;
+  height: 30px;
+}
+
+.block-list div {
+  display: flex;
+}
+
+.block-check {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+}
+
+.block-check.active {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+  background: radial-gradient(black 50%, transparent 50%);
+}
+
+.title p {
+  padding: 0;
+  margin: 0;
+}
+
+.block-list.active .arrow {
+  transform: rotate(90deg);
+}
+
+.list {
+  height: 0;
+  overflow: hidden;
+  margin-left: 50px;
+  width: 600px;
+}
+
+.block-list.active .list {
+  height: auto;
+}
+
+.list li,
+.list li div {
+  display: flex;
+  align-items: center;
+}
+
+.list li {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.color-box {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.color-box.yellow {
+  background: yellow;
+}
+
+.color-box.blue {
+  background: blue;
+}
+
+.color-box.green {
+  background: green;
+}
+
+.classBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-block-all .classBlock {
+  display: block;
+}
+
+.color-block-all .list {
+  height: auto;
+}
+
+.block-list.active .list {
+  height: auto;
+}
+
+.color-block-all .list li {
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  justify-content: flex-start;
+}
+
+.color-block-all .list {
+  margin-left: 0px;
+}
+
+.color-block-all .color-box {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.color-box.yellow {
+  background: yellow;
+}
+
+.color-box.blue {
+  background: blue;
+}
+
+.color-box.green {
+  background: green;
+}
+
+.classBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-block-all .classBlock {
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-top: 10px;
+}
