@@ -63,6 +63,7 @@ let updateValue = (event, item) => {
 };
 
 provide("items", items);
+provide("title", props.title);
 </script>
 
 <template>

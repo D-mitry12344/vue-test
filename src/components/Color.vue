@@ -5,12 +5,12 @@ import { provide } from "vue";
 import { ref, reactive } from "vue";
 
 let itms = inject("items");
-console.log(itms);
+let title = inject("title");
 </script>
 
 <template>
   <div class="classBlock">
-    <div class="title">Lists 1</div>
+    <div class="title">{{ title }}</div>
     <div>
       <ul class="list">
         <li v-for="item in itms">
